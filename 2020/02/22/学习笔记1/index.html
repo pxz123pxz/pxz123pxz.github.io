@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-
 <html lang="zh-CN">
-
 <head>
-  
-  <title>学习笔记1 - pxz</title>
   <meta charset="UTF-8">
-  <meta name="description" content="�����ɹţ����º�ĸ">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  
-  
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
   <meta name="description" content="怎样切换目录盘例如：C:\用户\86157\Z:切换到某个目录：Z:\cd 目录名称 部署博客流程文章写好后，在终端分别输入：hexo clean(清除文件包), hexo g(重新生成文件), hexo d(部署到博客上) jupyter notebook使用方法命令模式蓝色 编辑模式进入命令模式：ESC 编辑模式绿色 命令模式进入编辑模式：enter 一些快捷键的使用shift+enter:">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习笔记1">
@@ -21,137 +29,184 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://wiki.komica.org/pix/img14966.jpg">
 <meta property="article:published_time" content="2020-02-22T06:10:42.573Z">
-<meta property="article:modified_time" content="2020-02-22T06:24:10.308Z">
-<meta property="article:author" content="������">
+<meta property="article:modified_time" content="2020-02-22T07:09:19.069Z">
+<meta property="article:author" content="peng">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://wiki.komica.org/pix/img14966.jpg">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
-  
-  <!--<link rel="stylesheet" href="/css/style.css?v=1582352695582">-->
 
-  
-<meta name="generator" content="Hexo 4.2.0"></head>
+<link rel="canonical" href="http://yoursite.com/2020/02/22/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/">
 
-<body class="mdui-drawer-body-left">
-  
-  <div id="nexmoe-background">
-    <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
-    <div class="mdui-appbar mdui-shadow-0">
-      <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
-        <div class="mdui-toolbar-spacer"></div>
-        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="������" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="������"></a>
-       </div>
-    </div>
-  </div>
-  <div id="nexmoe-header">
-      <div class="nexmoe-drawer mdui-drawer" id="drawer">
-    <div class="nexmoe-avatar mdui-ripple">
-        <a href="/" title="������">
-            <img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="������" alt="������">
-        </a>
-    </div>
-    <div class="nexmoe-count">
-        <div><span>文章</span>4</div>
-        <div><span>标签</span>0</div>
-        <div><span>分类</span>0</div>
-    </div>
-    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
-            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
-            <div class="mdui-list-item-content">
-                回到首页
-            </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
-            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
-            <div class="mdui-list-item-content">
-                关于博客
-            </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
-            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
-            <div class="mdui-list-item-content">
-                我的朋友
-            </div>
-        </a>
-        
-    </div>
-    <aside id="nexmoe-sidebar">
-  
-  <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-search">
-        <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
-            <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
-        </form>
-    </div>
-</div>
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">社交按钮</h3>
-    <div class="nexmoe-widget nexmoe-social">
-        <a class="mdui-ripple" href="https://space.bilibili.com/20238211" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
-            <i class="nexmoefont icon-bilibili"></i>
-        </a><a class="mdui-ripple" href="https://github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
-            <i class="nexmoefont icon-github"></i>
-        </a>
-    </div>
-</div>
-  
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>学习笔记1 | pxz</title>
   
 
-  
-  
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">文章归档</h3>
-    <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a></li></ul>
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="pxz" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
   </div>
 
+  <div class="site-meta">
 
-  
-</aside>
-    <div class="nexmoe-copyright">
-        &copy; 2020 ������
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">pxz</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-</div><!-- .nexmoe-drawer -->
   </div>
-  <div id="nexmoe-content">
-    <div class="nexmoe-primary">
-        <div class="nexmoe-post">
-  
-      <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
-          <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="学习笔记1" class="lazyload">
-          <h1>学习笔记1</h1>
-      </div>
-  
-  
-  <div class="nexmoe-post-meta" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月22日</a>
-    <a><i class="nexmoefont icon-areachart"></i>1.5k 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 6 分钟</a>
+
+  <div class="site-nav-right"></div>
 </div>
 
-  <div class="nexmoe-post-right">
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
     
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
   </div>
 
-  <article>
-    <h2 id="怎样切换目录盘"><a href="#怎样切换目录盘" class="headerlink" title="怎样切换目录盘"></a>怎样切换目录盘</h2><p>例如：C:\用户\86157\Z:<br>切换到某个目录：Z:\cd 目录名称</p>
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/22/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/head2.jpg">
+      <meta itemprop="name" content="peng">
+      <meta itemprop="description" content="���ڵ���">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="pxz">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          学习笔记1
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-22 14:10:42 / 修改时间：15:09:19" itemprop="dateCreated datePublished" datetime="2020-02-22T14:10:42+08:00">2020-02-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="怎样切换目录盘"><a href="#怎样切换目录盘" class="headerlink" title="怎样切换目录盘"></a>怎样切换目录盘</h2><p>例如：C:\用户\86157\Z:<br>切换到某个目录：Z:\cd 目录名称</p>
 <h2 id="部署博客流程"><a href="#部署博客流程" class="headerlink" title="部署博客流程"></a>部署博客流程</h2><p>文章写好后，在终端分别输入：hexo clean(清除文件包), hexo g(重新生成文件), hexo d(部署到博客上)</p>
 <h2 id="jupyter-notebook使用方法"><a href="#jupyter-notebook使用方法" class="headerlink" title="jupyter notebook使用方法"></a>jupyter notebook使用方法</h2><h3 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h3><p>蓝色 编辑模式进入命令模式：ESC</p>
 <h3 id="编辑模式"><a href="#编辑模式" class="headerlink" title="编辑模式"></a>编辑模式</h3><p>绿色 命令模式进入编辑模式：enter</p>
 <h3 id="一些快捷键的使用"><a href="#一些快捷键的使用" class="headerlink" title="一些快捷键的使用"></a>一些快捷键的使用</h3><p>shift+enter: 运行当前代码块，且光标进入下面的代码块<br>ctrl+enter: 运行当前代码块，并且光标停留在当前代码块<br>dd: 删除当前代码块<br>b: 在下方添加一个空代码块<br>a: 在上方添加一个空代码块<br>m: 将编程语言代码块变成Markdown代码块<br>y: 将Markdown代码块变成编程语言代码块</p>
-<h3 id="超链接-链接网址和图片使用方法"><a href="#超链接-链接网址和图片使用方法" class="headerlink" title="超链接(链接网址和图片使用方法)"></a>超链接(链接网址和图片使用方法)</h3><p><a href="http://www.python.org/" target="_blank" rel="noopener">python</a><br><img data-sizes="auto" data-src="http://wiki.komica.org/pix/img14966.jpg" alt="图片" class="lazyload"></p>
+<h3 id="超链接-链接网址和图片使用方法"><a href="#超链接-链接网址和图片使用方法" class="headerlink" title="超链接(链接网址和图片使用方法)"></a>超链接(链接网址和图片使用方法)</h3><p><a href="http://www.python.org/" target="_blank" rel="noopener">python</a><br><img src="http://wiki.komica.org/pix/img14966.jpg" alt="图片"></p>
 <h3 id="一些Markdown语法"><a href="#一些Markdown语法" class="headerlink" title="一些Markdown语法"></a>一些Markdown语法</h3><ul>
 <li>第一点</li>
 <li>第二点</li>
@@ -234,52 +289,165 @@ False</code></pre><h3 id="remove"><a href="#remove" class="headerlink" title="re
 <p>保存后运行代码，我们可以发现结果还是一样的<br><strong>我的名字叫托尼，我的年龄是20，我的职业是理发师。</strong></p>
 <h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3><p>“转义字符” 顾名思义就是能将字符意思改变的符号，转义字符 \ 可以转义很多字符，比如 \n 表示换行， \t 表示 制表符，字符 \ 本身也要转义，所以 \ 表示的字符就是 \ 。</p>
 
-  </article>
-
-  <div class="nexmoe-post-meta">
-    
-    
-</div>
-
-  <div class="nexmoe-post-footer">
-    
-      
-  <div class="nexmoe-post-copyright">
-    <strong>本文作者：</strong>������<br>
-    <strong>本文链接：</strong><a href="http://yoursite.com/2020/02/22/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/" title="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;02&#x2F;22&#x2F;%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;02&#x2F;22&#x2F;%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01&#x2F;</a><br>
-    
-      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
-    
-  </div>
-
-
-    
-    <section class="nexmoe-comment">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
-<div id="gitalk"></div>
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '80b2453b6d5f37ad6225',
-        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
-        id: window.location.pathname,
-        repo: 'nexmoe.github.io',
-        owner: 'nexmoe',
-        admin: 'nexmoe'
-    })
-    gitalk.render('gitalk')
-</script>
-</section>
-  </div>
-</div>
     </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" rel="prev" title="我的第一篇博客">
+      <i class="fa fa-chevron-left"></i> 我的第一篇博客
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
   </div>
-  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1582352695584"></script>-->
 
 
-    <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#怎样切换目录盘"><span class="nav-number">1.</span> <span class="nav-text">怎样切换目录盘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署博客流程"><span class="nav-number">2.</span> <span class="nav-text">部署博客流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jupyter-notebook使用方法"><span class="nav-number">3.</span> <span class="nav-text">jupyter notebook使用方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#命令模式"><span class="nav-number">3.1.</span> <span class="nav-text">命令模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑模式"><span class="nav-number">3.2.</span> <span class="nav-text">编辑模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一些快捷键的使用"><span class="nav-number">3.3.</span> <span class="nav-text">一些快捷键的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#超链接-链接网址和图片使用方法"><span class="nav-number">3.4.</span> <span class="nav-text">超链接(链接网址和图片使用方法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一些Markdown语法"><span class="nav-number">3.5.</span> <span class="nav-text">一些Markdown语法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">1.1.</span> <span class="nav-text">三级标题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python数据类型"><span class="nav-number"></span> <span class="nav-text">Python数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#列表-list"><span class="nav-number">1.</span> <span class="nav-text">列表(list)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#len"><span class="nav-number">1.1.</span> <span class="nav-text">len()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切片"><span class="nav-number">1.2.</span> <span class="nav-text">切片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#append"><span class="nav-number">1.3.</span> <span class="nav-text">append()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pop"><span class="nav-number">1.4.</span> <span class="nav-text">pop()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#extend"><span class="nav-number">1.5.</span> <span class="nav-text">extend()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#in-not-in"><span class="nav-number">1.6.</span> <span class="nav-text">in&#x2F;not in</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#remove"><span class="nav-number">1.7.</span> <span class="nav-text">remove()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#嵌套列表"><span class="nav-number">1.8.</span> <span class="nav-text">嵌套列表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元组-tuple"><span class="nav-number">2.</span> <span class="nav-text">元组(tuple)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#元组的创建"><span class="nav-number">2.1.</span> <span class="nav-text">元组的创建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#索引"><span class="nav-number">2.2.</span> <span class="nav-text">索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切片-1"><span class="nav-number">2.3.</span> <span class="nav-text">切片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改元组中的列表"><span class="nav-number">2.4.</span> <span class="nav-text">修改元组中的列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元组拆包"><span class="nav-number">2.5.</span> <span class="nav-text">元组拆包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特别注意"><span class="nav-number">2.6.</span> <span class="nav-text">特别注意</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#占位符"><span class="nav-number">2.7.</span> <span class="nav-text">%占位符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#转义字符"><span class="nav-number">2.8.</span> <span class="nav-text">转义字符</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="peng"
+      src="/images/head2.jpg">
+  <p class="site-author-name" itemprop="name">peng</p>
+  <div class="site-description" itemprop="description">���ڵ���</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">peng</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
 
 
 
@@ -289,6 +457,19 @@ False</code></pre><h3 id="remove"><a href="#remove" class="headerlink" title="re
 
 
 
-</body>
 
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
 </html>
