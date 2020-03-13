@@ -159,6 +159,141 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/head2.jpg">
+      <meta itemprop="name" content="peng">
+      <meta itemprop="description" content="���ڵ���">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="pxz">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02/" class="post-title-link" itemprop="url">学习笔记2</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-13 20:45:43" itemprop="dateCreated datePublished" datetime="2020-03-13T20:45:43+08:00">2020-03-13</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>函数是组织好的，可重复使用的，用来实现单一，或相关联功能的代码段。 函数能提高应用的模块性，和代码的重复利用率。你已经知道Python提供了许多内建函数，比如print()。但你也可以 自己创建函数，这被叫做用户自定义函数。 </p>
+<h2 id="定义一个函数"><a href="#定义一个函数" class="headerlink" title="定义一个函数"></a>定义一个函数</h2><p>你可以定义一个由自己想要功能的函数，以下是简单的规则:</p>
+<ul>
+<li>函数代码块以 def 关键词开头，后接函数标识符名称和圆括号()。 </li>
+<li>任何传入参数和自变量必须放在圆括号中间。圆括号之间可以用于定义参数.</li>
+<li>函数的第一行语句可以选择性地使用文档字符串—用于存放函数说明</li>
+<li>函数内容以冒号起始，并且缩进。 </li>
+<li>return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回 None。</li>
+</ul>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">function</span><span class="params">()</span>:</span></span><br><span class="line">   <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">function</span><span class="params">()</span>:</span></span><br><span class="line">   <span class="keyword">return</span> [返回值]</span><br></pre></td></tr></table></figure>
+
+<h2 id="函数的使用"><a href="#函数的使用" class="headerlink" title="函数的使用"></a>函数的使用</h2><p>定义一个函数只给了函数一个名称，指定了函数里包含的参数，和代码块结构。<br>这个函数的基本结构完成以后，并不会执行，只有当被调用的时候才会被执行。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fmt</span><span class="params">()</span>:</span></span><br><span class="line">   print(<span class="string">'被调用了'</span>)</span><br><span class="line"></span><br><span class="line">fmt()</span><br></pre></td></tr></table></figure>
+<p>当函数使用了return时，需要一个载体来接受这个返回的结果，不然这个结果就会瞬间被python解释器释放。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">retuen_sth</span><span class="params">()</span>:</span></span><br><span class="line">   <span class="keyword">return</span> <span class="string">'获取返回值'</span></span><br><span class="line"></span><br><span class="line">print(retuen_sth())</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">retuen_sth</span><span class="params">()</span>:</span></span><br><span class="line">   <span class="keyword">return</span> <span class="string">'获取返回值'</span></span><br><span class="line">msg = retuen_sth()</span><br><span class="line">print(msg)</span><br></pre></td></tr></table></figure>
+<h2 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h2><p>就像数学中的函数一样，Python内置的函数以及我们自己定义的函数都是可以有参数的，这个参数在我们使用这个函 数的时候传入，函数参数的作用是传递数据给函数使用。</p>
+<ul>
+<li>必备参数 </li>
+<li>关键字参数 </li>
+<li>不定长参数 </li>
+<li>默认参数 </li>
+</ul>
+<p>函数括号内的参数称为形式参数，也叫形参，在我们实际调用函数时传入的参数成为实际参数，也叫实参。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fmt</span><span class="params">(str)</span>:</span></span><br><span class="line">   print(str)</span><br><span class="line"></span><br><span class="line">fmt(<span class="string">'参数传递'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(a,b)</span>:</span></span><br><span class="line">   print(a + b)</span><br><span class="line"></span><br><span class="line">add(b=<span class="number">3</span>,a=<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(*args)</span>:</span></span><br><span class="line">   print(args)</span><br><span class="line"></span><br><span class="line">func(<span class="string">'name'</span>,<span class="string">'age'</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func_doc</span><span class="params">(*args,**kwargs)</span>:</span></span><br><span class="line">   print(args)</span><br><span class="line">   print(kwargs)</span><br><span class="line">    </span><br><span class="line">func_doc(<span class="string">'name'</span>,<span class="string">'age'</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,name=<span class="string">'tony'</span>,age=<span class="string">'20'</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="函数作为对象"><a href="#函数作为对象" class="headerlink" title="函数作为对象"></a>函数作为对象</h2><p> Python是面向对象极为彻底的语言，在Python中万物皆对象，函数也不例外，我们可以将函数赋值给一个变量，我们 也可以将函数作为函数的返回值。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(a,b)</span>:</span></span><br><span class="line">   print(a + b)</span><br><span class="line"></span><br><span class="line">func = add</span><br><span class="line">print(func(<span class="number">3</span>,<span class="number">4</span>))</span><br></pre></td></tr></table></figure>
+<p><em>注意</em>：在将函数作为对象赋值给变量或作为返回值的时候是不能加括号的，加上括号就是调用函数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mul</span><span class="params">(a,x)</span>:</span></span><br><span class="line">   <span class="keyword">return</span> a ** x</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">none</span><span class="params">()</span>:</span></span><br><span class="line">   <span class="keyword">return</span> mul</span><br><span class="line"></span><br><span class="line">func = none()</span><br><span class="line">print(func(<span class="number">3</span>,<span class="number">4</span>))</span><br></pre></td></tr></table></figure>
+
+<h2 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h2><p>  递归是程序调用自身的一种编程技巧，一个过程或函数在其定义或说明中有直接或间接调用自身的一种方法，它通常 把一个大型复杂的问题层层转化为一个与原问题相似的规模较小的问题来求解，递归策略只需少量的程序就可描述出解题 过程所需要的多次重复计算，大大地减少了程序的代码量。递归的能力在于用有限的语来定义对象的无限集合。一般来 说，递归需要有边界条件、递归前进段和递归返回段。当边界条件不满足时，递归前进；当边界条件满足时，递归返回。<br>  <em>注意</em>:当运行空间复杂度较高的程序时，不建议对它使用递归，因为这样会占用大量的计算机内存，并且会时间上也并不高效。<br> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1-n之和</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">factoral</span><span class="params">(x)</span>:</span></span><br><span class="line">   <span class="keyword">if</span> x == <span class="number">1</span>:</span><br><span class="line">      <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">   <span class="keyword">return</span> factoral(x - <span class="number">1</span>) + x</span><br><span class="line"></span><br><span class="line">a = factoral(<span class="number">4</span>)</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># n的阶乘</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">factoral</span><span class="params">(x)</span>:</span></span><br><span class="line">   <span class="keyword">if</span> x == <span class="number">1</span>:</span><br><span class="line">      <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">   <span class="keyword">return</span> factoral(x - <span class="number">1</span>) * x</span><br><span class="line"></span><br><span class="line">a = factoral(<span class="number">4</span>)</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<h3 id="递归求斐波那契数列"><a href="#递归求斐波那契数列" class="headerlink" title="递归求斐波那契数列"></a>递归求斐波那契数列</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fibonacci</span><span class="params">(n)</span>:</span></span><br><span class="line">   <span class="keyword">if</span> n == <span class="number">1</span>:</span><br><span class="line">      <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">   <span class="keyword">if</span> n == <span class="number">2</span>:</span><br><span class="line">      <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">   <span class="keyword">return</span> fibonacci(n - <span class="number">1</span>) + fibonacci(n - <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">i = fibonacci(<span class="number">7</span>)</span><br><span class="line">print(i)</span><br></pre></td></tr></table></figure>
+
+<h3 id="函数运用"><a href="#函数运用" class="headerlink" title="函数运用"></a>函数运用</h3><p>使用了Python标准库中的collections模块中的Counter数据结构，这是一个容器数据结构，可以直接计算出对象中重复 元素的个数。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> jieba</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> counter</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">count</span><span class="params">()</span>:</span></span><br><span class="line">    f = open(<span class="string">'射雕英雄传第一回.txt'</span>, <span class="string">'r'</span>, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">    text = f.read()</span><br><span class="line">    f.close()</span><br><span class="line">    words = jieba.lcut(text)</span><br><span class="line">    word_count = counter(words)</span><br><span class="line">    <span class="keyword">return</span> word_count</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                                                       </span><br><span class="line">if__name__ == <span class="string">'_main_'</span>:</span><br><span class="line">   word_count = count()</span><br><span class="line">   print(word_count)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="网络爬虫基础"><a href="#网络爬虫基础" class="headerlink" title="网络爬虫基础"></a>网络爬虫基础</h2><h3 id="什么是爬虫"><a href="#什么是爬虫" class="headerlink" title="什么是爬虫"></a>什么是爬虫</h3><p>爬虫是一种按照一定的规则，自动抓取万维网信息的程序或脚本</p>
+<h3 id="爬虫的基本组成"><a href="#爬虫的基本组成" class="headerlink" title="爬虫的基本组成"></a>爬虫的基本组成</h3><ul>
+<li>URL管理模块</li>
+<li>HTML下载模块</li>
+<li>HTML解析模块</li>
+<li>数据存储模块</li>
+<li>爬虫调度模块</li>
+</ul>
+<h3 id="常用的PYTHON爬虫模块"><a href="#常用的PYTHON爬虫模块" class="headerlink" title="常用的PYTHON爬虫模块"></a>常用的PYTHON爬虫模块</h3><ul>
+<li>requests</li>
+<li>scrapy</li>
+<li>pyspider</li>
+<li>selenium</li>
+</ul>
+<h3 id="GET请求"><a href="#GET请求" class="headerlink" title="GET请求"></a>GET请求</h3><ul>
+<li>参数，关键信息在URL中</li>
+</ul>
+<h3 id="POST请求"><a href="#POST请求" class="headerlink" title="POST请求"></a>POST请求</h3><ul>
+<li>Form Data</li>
+<li>Request Payload</li>
+</ul>
+<h3 id="常用的解析方法"><a href="#常用的解析方法" class="headerlink" title="常用的解析方法"></a>常用的解析方法</h3><ul>
+<li>Css选择器</li>
+<li>Xpath</li>
+<li>正则表达式</li>
+</ul>
+<h3 id="数据存储"><a href="#数据存储" class="headerlink" title="数据存储"></a>数据存储</h3><ul>
+<li>文本存储csv等</li>
+<li>Mongo</li>
+<li>Redis</li>
+<li>Mysql</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/22/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -561,7 +696,7 @@ False</code></pre><h3 id="remove"><a href="#remove" class="headerlink" title="re
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
