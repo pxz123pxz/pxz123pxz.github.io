@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-13T12:45:43.591Z</updated>
+  <updated>2020-03-15T08:42:39.149Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>爬虫作业1</title>
+    <link href="http://yoursite.com/2020/03/15/%E7%88%AC%E8%99%AB%E4%BD%9C%E4%B8%9A1/"/>
+    <id>http://yoursite.com/2020/03/15/%E7%88%AC%E8%99%AB%E4%BD%9C%E4%B8%9A1/</id>
+    <published>2020-03-15T08:42:39.148Z</published>
+    <updated>2020-03-15T08:42:39.149Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="更改翻译程序"><a href="#更改翻译程序" class="headerlink" title="更改翻译程序"></a>更改翻译程序</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">'http://cn.bing.com/ttranslatev3?isVertical=1&amp;&amp;IG=E9AB26AB0A0542C19BCD6F5234321BEC&amp;IID=translator.5028.8'</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">translate_weiruan</span><span class="params">(info,fr=<span class="string">'zh-CHS'</span>,to=<span class="string">"en"</span>)</span>:</span></span><br><span class="line">    print(<span class="string">'翻译结果:'</span>+requests.post(url,data=&#123;<span class="string">'text'</span>:info,<span class="string">'from'</span>:fr,<span class="string">'to'</span>:to,<span class="string">'doctype'</span>:<span class="string">'json'</span>&#125;).json()[<span class="string">"translationResponse"</span>])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">is_Chinese</span><span class="params">(str)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> ch <span class="keyword">in</span> str:</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'\u4e00'</span> &lt;= ch &lt;= <span class="string">'\u9fff'</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">start_translate</span><span class="params">()</span>:</span></span><br><span class="line">    trans = input(<span class="string">"翻译内容:"</span>)</span><br><span class="line">    <span class="keyword">if</span> is_Chinese(trans):</span><br><span class="line">        translate_weiruan(trans)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        translate_weiruan(trans,fr=<span class="string">'en'</span>,to=<span class="string">'zh-CHS'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    print(<span class="string">'   翻译结果由微软翻译提供！(请确保网络已连接)'</span>)</span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        start_translate()</span><br><span class="line">        print(<span class="string">'\n'</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;更改翻译程序&quot;&gt;&lt;a href=&quot;#更改翻译程序&quot; class=&quot;headerlink&quot; title=&quot;更改翻译程序&quot;&gt;&lt;/a&gt;更改翻译程序&lt;/h1&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gu
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>学习笔记2</title>
